@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Background image for the body */
+        body {
+            background-image: url('images/download.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background image remains fixed as the user scrolls */
+            color: white; /* Default text color */
+        }
+        .home-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .skill-item p {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .progress {
+            height: 25px;
+            border-radius: 15px;
+        }
+        .progress-bar {
+            line-height: 25px;
+            font-weight: bold;
+            background-color: #007bff;
+        }
+        .btn-primary {
+            margin-top: 20px;
+        }
+        .about-info p {
+            font-size: 1.25rem; /* Increase this value to make the text larger */
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">About</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="about.html">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <div class="row vh-100 align-items-center">
+            <div class="col-md-6 home-text">
+                <h1><span class="typing"><h1 align="center"> Hi 👋, Glad to see you here! </span></h1>
+            </div>
+            <div class="col-md-6 home-img">
+                <!-- You can add an image or animation here -->
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img">
+                        <div class="img-box inner-shadow">
+                            <img src="images/buttoonn.png" alt="Your Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-info">
+                        <p>Hi! My name is Priyanshi Paliwal. I am an aspiring Web Developer currently learning MERN stack, along with proficiency in C/C++ programming languages and knowledge of Data structures and Algorithms. I am a final year student pursuing Bachelors of Technology in Information Technology (2021-2025).</p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <a href="Parul's Resume.pdf" class="btn btn-primary outer-shadow hover-in-shadow" download>Download CV</a> 
+                    <a href="education.html" class="btn btn-primary outer-shadow hover-in-shadow">View Education</a>
+                </div>
+            </div>
+            <!-- Skills section -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Skills</h2>
+                    <div class="tab-content skills active mt-4">
+                        <div class="row">
+                            <!-- Skill items -->
+                            <div class="col-md-6 skill-item">
+                                <p>C++</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 85%;">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>HTML</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 90%;">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>CSS</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 70%;">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Bootstrap</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 80%;">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>JavaScript</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 50%;">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>DSA</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 90%;">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>ReactJs</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 70%;">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>React-Bootstrap</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 60%;">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>SQL</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 75%;">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>MongoDB</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 50%;">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Object Oriented Programming Skills</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 85%;">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>WordPress</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 40%;">
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Figma</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 50%;">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Canva</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 65%;">
+                                        <span>65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Linux Administration</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 30%;">
+                                        <span>30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 skill-item">
+                                <p>Google Cloud Platform</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: 40%;">
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="text-center"> </h2>
+                    <div class="tab-content education mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center my-5">
+        <a href="project.html" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Projects</a>
+    </div>
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 My Portfolio. All rights reserved. | <a href="privacy.html" class="footer-link">Privacy Policy</a> | <a href="terms.html" class="footer-link">Terms of Use</a></p>
+    </footer>
+    <br/>
+    <br/>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.tab-item').click(function () {
+                var target = $(this).data('target');
+                $('.tab-item').removeClass('active');
+                $(this).addClass('active');
+                $('.tab-content').removeClass('active');
+                $(target).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

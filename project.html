@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background image for the body */
+        body {
+            background-image: url('images/download.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background image remains fixed as the user scrolls */
+            color: white; /* Default text color */
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the cards */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 30%; /* Adjust width to fit three cards in a row */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title, .card-text {
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #ff69b4; /* Pink color for the button */
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the footer */
+            color: white;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-link {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #ff1493;
+            text-decoration: underline;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-bottom-left {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .btn-bottom-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="project.html">Projects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="about.html">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="project.html"> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Projects</h2>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="card-container mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">TASTEBUD</h5>
+                    <p class="card-text">Diet recipe generating AI based website  </p>
+                    <a href="https://github.com/28priya/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CUSTOMER SEGMENTATIOM</h5>
+                    <p class="card-text">Customer Segmentation using Kmeans Cluster Algorithm</p>
+                    <a href="https://github.com/28priya/Customer-Segmentation" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">House Price Prediction </h5>
+                    <p class="card-text">House price prediction model built using linear regression.</p>
+                    <a href="https://github.com/28priya/House-Price-Prediction" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 My Portfolio. All rights reserved. | <a href="privacy.html" class="footer-link">Privacy Policy</a> | <a href="terms.html" class="footer-link">Terms of Use</a></p>
+    </footer>
+
+    <!-- Buttons -->
+    <a href="about.html" class="btn btn-primary btn-bottom-left">Back</a>
+    <a href="contact.html" class="btn btn-primary btn-bottom-right">Next</a>
+
+    <script>
+        // Redirecting links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href="project.html"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default action
+                    const target = this.getAttribute('href');
+                    window.location.href = target;
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
