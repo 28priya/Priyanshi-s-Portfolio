@@ -9,7 +9,7 @@
     <style>
         /* Background image for the body */
         body {
-            background-image: url('images/download.jpg');
+            background-image: url('images/black-abstract-background-web-sites-260nw-1500865031.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Ensures the background image remains fixed as the user scrolls */
@@ -60,11 +60,43 @@
             color: #ff1493;
             text-decoration: underline;
         }
+
+        .back-button {
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+        }
+
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8) !important; /* Transparent black background */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: white !important; /* White text color */
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <a class="navbar-brand" href="index.html">Contact</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,10 +107,10 @@
                         <a class="nav-link font-weight-bold" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="about.html">About </a>
+                        <a class="nav-link font-weight-bold" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="projects.html">Projects</a>
+                        <a class="nav-link font-weight-bold" href="project.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
@@ -119,6 +151,9 @@
                     </form>
                     <div id="form-message" class="mt-3"></div>
                 </div>
+                <div class="text-center">
+                    <a href="project.html" class="back-button">Back to Projects</a>
+                </div>
             </div>
         </div>
     </div>
@@ -142,4 +177,5 @@
     </script>
 </body>
 </html>
+
 
