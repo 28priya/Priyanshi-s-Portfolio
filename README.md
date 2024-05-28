@@ -2,17 +2,6 @@
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio, showcasing my projects, skills, and contact information.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Pages](#pages)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
