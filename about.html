@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,43 +16,66 @@
     <style>
         /* Background image for the body */
         body {
-            background-image: url('images/download.jpg');
+            background-image: url('images/black-abstract-background-web-sites-260nw-1500865031.webp');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Ensures the background image remains fixed as the user scrolls */
-            color: white; /* Default text color */
+            background-attachment: fixed;
+            color: white;
         }
+
         .home-text h1 {
             font-size: 3rem;
             font-weight: bold;
         }
+
         .about-img img {
             width: 100%;
             border-radius: 15px;
         }
+
         .skill-item p {
             margin-bottom: 5px;
             font-weight: bold;
         }
+
         .progress {
             height: 25px;
             border-radius: 15px;
         }
+
         .progress-bar {
             line-height: 25px;
             font-weight: bold;
             background-color: #007bff;
         }
+
         .btn-primary {
             margin-top: 20px;
         }
+
         .about-info p {
-            font-size: 1.25rem; /* Increase this value to make the text larger */
+            font-size: 1.25rem;
+        }
+
+        /* Header styles */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8) !important; /* Transparent black */
+            color: white;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #ff69b4 !important;
         }
     </style>
 </head>
+
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">About</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +86,7 @@
                     <a class="nav-link font-weight-bold" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="about.html">About </a>
+                    <a class="nav-link font-weight-bold" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold" href="project.html">Projects</a>
@@ -74,6 +98,7 @@
         </div>
     </nav>
 </header>
+
 <body>
     <div class="container">
         <div class="row vh-100 align-items-center">
@@ -100,9 +125,9 @@
                     <div class="about-info">
                         <p>Hi! My name is Priyanshi Paliwal. I am an aspiring Web Developer currently learning MERN stack, along with proficiency in C/C++ programming languages and knowledge of Data structures and Algorithms. I am a final year student pursuing Bachelors of Technology in Information Technology (2021-2025).</p>
                     </div>
-                    <br/>
-                    <br/>
-                    <a href="Parul's Resume.pdf" class="btn btn-primary outer-shadow hover-in-shadow" download>Download CV</a> 
+                    <br />
+                    <br />
+                    <a href="Parul's Resume.pdf" class="btn btn-primary outer-shadow hover-in-shadow" download>Download CV</a>
                     <a href="education.html" class="btn btn-primary outer-shadow hover-in-shadow">View Education</a>
                 </div>
             </div>
@@ -260,15 +285,15 @@
     <footer class="text-center mt-5">
         <p>&copy; 2024 My Portfolio. All rights reserved. | <a href="privacy.html" class="footer-link">Privacy Policy</a> | <a href="terms.html" class="footer-link">Terms of Use</a></p>
     </footer>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.tab-item').click(function () {
+        $(document).ready(function() {
+            $('.tab-item').click(function() {
                 var target = $(this).data('target');
                 $('.tab-item').removeClass('active');
                 $(this).addClass('active');
@@ -278,4 +303,5 @@
         });
     </script>
 </body>
+
 </html>
