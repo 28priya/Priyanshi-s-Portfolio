@@ -10,7 +10,7 @@
     <style>
         /* Background image for the body */
         body {
-            background-image: url('images/download.jpg');
+            background-image: url('images/black-abstract-background-web-sites-260nw-1500865031.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Ensures the background image remains fixed as the user scrolls */
@@ -80,11 +80,46 @@
             bottom: 20px;
             right: 20px;
         }
+
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .top-buttons .btn {
+            background-color: #ff69b4;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .top-buttons .btn:hover {
+            background-color: #ff1493;
+        }
+
+        .top-buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8) !important; /* Transparent black background */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: white !important; /* White text color */
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <a class="navbar-brand" href="project.html">Projects</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -95,10 +130,10 @@
                         <a class="nav-link font-weight-bold" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="about.html">About </a>
+                        <a class="nav-link font-weight-bold" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="project.html"> Projects</a>
+                        <a class="nav-link font-weight-bold" href="project.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
@@ -118,7 +153,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">TASTEBUD</h5>
-                    <p class="card-text">Diet recipe generating AI based website  </p>
+                    <p class="card-text">Diet recipe generating AI based website</p>
                     <a href="https://github.com/28priya/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
@@ -131,7 +166,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">House Price Prediction </h5>
+                    <h5 class="card-title">House Price Prediction</h5>
                     <p class="card-text">House price prediction model built using linear regression.</p>
                     <a href="https://github.com/28priya/House-Price-Prediction" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
@@ -146,20 +181,6 @@
     <!-- Buttons -->
     <a href="about.html" class="btn btn-primary btn-bottom-left">Back</a>
     <a href="contact.html" class="btn btn-primary btn-bottom-right">Next</a>
-
-    <script>
-        // Redirecting links
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a[href="project.html"]');
-            links.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent the default action
-                    const target = this.getAttribute('href');
-                    window.location.href = target;
-                });
-            });
-        });
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
